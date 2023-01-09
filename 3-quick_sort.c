@@ -10,9 +10,10 @@
 void quick_sorty(int *array, int *p_array, size_t size, size_t p_size)
 {
 	size_t  end = size - 1,
-		index;
-		int temp_num,
+		index,
 		target = 0;
+		int temp_num;
+
 	if (!array || size == 0)
 		return;
 
