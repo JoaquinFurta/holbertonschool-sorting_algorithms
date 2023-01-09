@@ -32,7 +32,7 @@ void quick_sorty(int *array, int *p_array, size_t size, size_t p_size)
 		temp_num = array[end];
 		array[end] = array[target];
 		array[target] = temp_num;
-		if (end != target)
+		if (end != target && array[index] != array[target])
 			print_array(p_array, p_size);
 
 		quick_sorty(&array[target + 1], p_array, end - target, p_size);
